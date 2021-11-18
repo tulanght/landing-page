@@ -3,7 +3,6 @@ body {
   font-family: Rotobo, sans-serif;
   margin: 0;
   min-height: 100vh;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   font-size: 18px;
@@ -15,7 +14,16 @@ body {
   display: flex;
 }
 .header {
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+}
+.header .navbar {
+  max-width: 1024px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
 }
 .logo {
   font-size: 24px;
@@ -24,22 +32,55 @@ body {
 .signup-btn {
   background-color: #3882f6;
   color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.nav-links li {
+  list-style-type: none;
 }
 .nav-links li a {
   font-size: 18px;
   color: #e5e7eb;
+  text-decoration: none;
+}
+.hero-wrapper {
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
 }
 .hero {
   display: flex;
+  max-width: 1024px;
+  flex: 1;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.hero-content {
+  flex: 1;
+}
+.hero-img-wrapper {
+  flex: 1;
 }
 .hero-main-text {
   font-size: 48px;
-  font-weight: 800;
+  font-weight: 600;
   color: #f9faf8;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 .hero-secondary-text {
   font-size: 18px;
   color: #e5e7eb;
+  max-width: 450px;
 }
 .content-section {
   display: flex;
@@ -48,19 +89,92 @@ body {
   font-size: 36px;
   font-weight: 800;
   color: #1f2937;
+  margin-top: 0px;
 }
 .cards-list {
   display: flex;
+  justify-content: space-around;
+  gap: 50px;
 }
 .card {
-  flex: 1;
+  width: 160px;
+  text-align: center;
 }
+.card img {
+  border-radius: 18px;
+  border: #3882f6 4px solid;
+}
+.content-section a {
+  text-decoration: none;
+}
+.card .card-text {
+  padding: 16px 0;
+}
+.content-section-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  padding-bottom: 70px;
+}
+
 .content-section-two {
   background-color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+}
+.quote-wrapper {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
 }
 .quote-text {
   font-size: 26px;
-  font-weight: 200;
+  font-weight: 100;
   font-style: italic;
   color: #1f2937;
+}
+.quote-author {
+  font-weight: bold;
+  text-align: right;
+  margin-top: 0;
+}
+.content-section-three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+.signup-modal {
+  max-width: 800px;
+  display: flex;
+  flex: 1;
+  background-color: #3882f6;
+  padding: 20px 50px;
+  border-radius: 18px;
+  color: #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+}
+.signup-modal h4 {
+  margin: 8px 0;
+}
+.signup-modal p {
+  font-size: 14px;
+}
+.signup-modal .signup-btn {
+  align-self: center;
+  border: white 1px solid;
+}
+.footer {
+  color: #f9faf8;
+  justify-content: center;
+  align-items: center;
+}
+.footer .copyright-text {
+  font-size: 14px;
+  padding: 12px 0;
 }
